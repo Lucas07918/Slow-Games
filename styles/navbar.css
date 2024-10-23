@@ -133,7 +133,7 @@
     }
 }
 
-@media (max-width: 768px){
+/* @media (max-width: 768px){
     .navbar{
         justify-content: space-around;
     }
@@ -151,7 +151,6 @@
     }
 
     .menu li{
-        /* padding: 1rem; */
         border-bottom: 0.15rem solid black;
         width: 90%;
         box-sizing: border-box;
@@ -171,4 +170,4 @@
         width: 30px;
         height: 30px;
     }
-}
+} */

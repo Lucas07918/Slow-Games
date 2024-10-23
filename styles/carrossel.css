@@ -89,7 +89,7 @@
 
 .shadow{
     width: 100%;
-    height: 10rem;
+    height: 14rem;
     position: absolute;
     bottom: 0;
     z-index: 2;
@@ -97,7 +97,7 @@
 
 .carrossel-news{
     position: absolute;
-    bottom: 10%;
+    bottom: 6%;
     z-index: 4;
     width: 100%;
     height: 25%;
