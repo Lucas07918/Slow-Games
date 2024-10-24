@@ -108,12 +108,12 @@
 }
 
 .carrossel-news-title{
-    width: 30%;
+    width: 35%;
     border-right: 0.2rem solid rgba(255, 255, 255, 0.5);
-    padding: 0 2rem;
+    padding: 0 2rem 0 0;
 }
 
 .carrossel-news-subtitle{
     width: 20%;
-    padding: 0 2rem
+    padding: 0 0 0 2rem;
 }
