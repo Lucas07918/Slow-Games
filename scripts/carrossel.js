@@ -51,5 +51,5 @@ function startAutoSlide() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // startAutoSlide();
+    startAutoSlide();
 })
