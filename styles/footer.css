@@ -1,0 +1,21 @@
+:root{
+    --primary-color: #FD4556;
+    --secundary-color:#BD3944;
+    --darker-red-color:#53212b;
+}
+
+.footer{
+    background-color: var(--primary-color);
+    padding: 2rem 10%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-footer{
+    width: 6rem;
+    height: 6rem;
+    background-repeat: no-repeat;
+    text-align: center;
+}

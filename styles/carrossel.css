@@ -95,6 +95,15 @@
     z-index: 2;
 }
 
+.shadow-rotate{
+    width: 100%;
+    height: 14rem;
+    position: absolute;
+    top: -5rem;
+    z-index: 2;
+    transform: rotate(180deg);
+}
+
 .carrossel-news{
     position: absolute;
     bottom: 6%;
