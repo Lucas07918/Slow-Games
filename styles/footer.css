@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo-footer{
@@ -18,4 +19,38 @@
     height: 6rem;
     background-repeat: no-repeat;
     text-align: center;
+}
+
+.social-footer li{
+    padding: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-menu ul{
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-menu li{
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 480px){
+    .logo-footer{
+    display: none;
+}
+
+.social-footer li{
+    display: none;
+}
+
+.footer-menu ul{
+    display: none;
+}
+
+.footer-menu li{
+    display: none;
+}
 }

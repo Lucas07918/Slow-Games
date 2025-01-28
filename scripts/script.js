@@ -15,11 +15,11 @@ searchIcon.addEventListener('click', () => {
 });
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
+    if(window.scrollY > 50) {
         navbar.classList.add('scrolled');
-        logo.src = './images/Slow_Games_logo_1.png'
+        logo.src = './images/slow_games_brand_red.png'
     } else {
         navbar.classList.remove('scrolled');
-        logo.src = './images/Slow_Games_logo_2.png'
+        logo.src = './images/slow_games_brand_white.png'
     }
 });

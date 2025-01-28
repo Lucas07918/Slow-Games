@@ -6,11 +6,11 @@
 
 .destaques{
     width: 100%;
-    height: 30rem;
+    height: 22rem;
     background-color: black;
+    /* background-color: #BD3944; */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     padding: 2rem 0;
 
@@ -38,12 +38,69 @@
 
 .destaques-item{
     width: 30%;
-    height: 100%;
+    height: 16rem;
+}
+
+.destaques-item-image-content{
+    width: 100%;
+    height: 16rem;
     /* background-color: blue; */
     color: white;
-    /* display: flex;  
+    background-size: cover;
+    display: flex;
     flex-direction: column;
-    column-gap: 5rem; */
+    justify-content: end;
+    /* padding: 2rem; */
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    border: 0.3rem solid var(--primary-color);
+}
+
+.destaques-item-title-container{
+    z-index: 2;
+    transition: transform 0.3s ease, color 0.3s ease;
+    position: absolute;
+    top: 9rem;
+    cursor: pointer;
+}
+
+.destaques h2 {
+    margin: 2rem;
+}
+
+.destaques-item-title-container:hover{
+    transform: translateY(-5px);
+}
+
+.destaques-shadow{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    right: 0rem;
+    top: 1rem;
+    z-index: 1;
+}
+
+.tags{
+    display: flex;
+    gap: 8px;
+    justify-content: left; 
+    margin-top: 10px;
+}
+
+.tag{
+    background-color: #BD3944ad;
+    padding: 0.3rem 0.5rem;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+}
+
+.tag:hover{
+    background-color: #BD3944;
+    transition: background-color 0.5s;
 }
 
 .container-collumns-home{
@@ -60,6 +117,11 @@
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     gap: 20px;
+    /* background-color: red; */
+}
+
+.section-title{
+    margin-bottom: 1rem;
     /* background-color: red; */
 }
 
@@ -104,41 +166,56 @@
     justify-content: space-between;
 }
 
-.noticia-data{
+.tag-news-list{
     background-color: var(--primary-color);
+    padding: 0.3rem 0.5rem;
     display: inline-block;
-    padding: 0.3rem 0;
-    width: 10rem;
-    text-align: center;
     color: white;
+    cursor: pointer;
+}
+
+.tag-news-list:hover{
+    background-color: var(--secundary-color);
+    transition: background-color 0.5s;
+}
+
+.reviews{
+    margin-top: 1rem;
 }
 
 .review{
-    width: 100%;
+    /* width: 100%; */
     height: 15rem;
     margin: 1rem 0;
     /* background-color: green; */
     display: flex;
     flex-direction: row;
+    cursor: pointer;
+}
+
+.review:hover {
+    color: var(--primary-color);
+    transition: color 0.3s;
 }
 
 .review-img{
-    width: 20rem;
+    width: 11rem;
     height: 100%;
-    background-color: blue;
+    /* background-color: blue; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
 }
 
 .review-info{
-    height: 100%;
-    width: -webkit-fill-available;
-    /* background-color: yellow; */
     font-size: 1.5rem;
     font-weight: 700;
     padding: 0 1rem;
+    cursor: pointer;
 }
+
 
 .review-nota{
     background-color: var(--primary-color);
@@ -146,11 +223,14 @@
     color: white;
     width: 4.5rem;
     height: 6rem;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 
@@ -163,4 +243,145 @@
     background-repeat: no-repeat;
     background-size: contain;
     /* background-color: red; */
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .destaques {
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .destaques-section-info {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .destaques-itens {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .destaques-item {
+    width: 45%;
+    height: 12rem;
+  }
+}
+
+@media (max-width: 768px) {
+    .destaques-itens{
+        /* background-color: red; */
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .destaques-item{
+        width: 90%;
+        height: 20rem;
+    }
+
+    .noticia{
+        width: 100%;
+        /* height: 15rem; */
+        margin-bottom: 1rem;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        box-sizing: border-box;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    .noticia:hover .noticia-img{
+        background-size: 160%;
+        filter: blur(0);
+    }
+
+    .noticia-img{
+        width: 30rem;
+        height: auto;
+        background-size: 150%;
+        background-position: center;
+        filter: blur(0.6px);
+        overflow: hidden;
+        transition: background-size .3s ease-in-out;
+    }
+
+    .noticia-info{
+        width: -webkit-fill-available;
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .tag-news-list{
+        background-color: var(--primary-color);
+        padding: 0.3rem 0.5rem;
+        display: inline-block;
+        color: white;
+        cursor: pointer;
+    }
+
+    .tag-news-list:hover{
+        background-color: var(--secundary-color);
+        transition: background-color 0.5s;
+    }
+
+    .grid-collumns-home{
+        display: grid;
+        grid-template-columns: 0fr 0fr;
+        gap: 20px;
+        /* background-color: red; */
+    }
+}
+
+@media (max-width: 480px) {
+  .destaques {
+    padding: 1rem 0;
+  }
+
+  .destaques-item {
+    height: 10rem;
+  }
+
+  .noticia {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .noticia-img {
+    width: 100%;
+    height: 10rem;
+  }
+
+  .noticia-info {
+    padding: 1rem;
+  }
+
+  .review {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .review-img {
+    width: 100%;
+    height: 10rem;
+  }
+
+  .review-info {
+    padding: 1rem;
+  }
+
+  .review-nota {
+    width: 3.5rem;
+    height: 5rem;
+    font-size: 1.5rem;
+  }
 }
