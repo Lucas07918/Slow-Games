@@ -7,7 +7,14 @@ const searchIcon = document.querySelector('.bi-search');
 
 
 hamburger.addEventListener('click', () => {
-  menu.classList.toggle('active');
+    menu.classList.toggle('active');
+    navbar.classList.toggle('mask');
+    if (navbar.classList.contains('mask')) {
+        logo.src = './images/slow_games_brand_red.png'
+    }
+    else {
+        logo.src = './images/slow_games_brand_white.png'
+    }
 });
 
 searchIcon.addEventListener('click', () => {

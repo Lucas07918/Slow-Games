@@ -30,6 +30,13 @@
     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
 }
 
+.mask{
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s ease-in-out alternate;
+    color: var(--primary-color);
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
+}
+
 .navbar-logo{
     margin-right: 3%;
     width: 6rem;
@@ -139,9 +146,11 @@
     }
 }
 
+
 @media(max-width:767px){
     .navbar{
         justify-content: space-around;
+        width: 100vw;
     }
     .menu ul{
         display: none;
@@ -154,13 +163,14 @@
         height: 87vh;
         text-align: left;
         align-items: center;
+        overflow-y: scroll;
     }
 
     .menu li{
         border-bottom: 0.15rem solid black;
         width: 90%;
         box-sizing: border-box;
-        padding: 1.5rem 0 0.5rem 0;
+        padding: 0.5rem 0 0.5rem 0;
     }
 
     .menu.active ul{
